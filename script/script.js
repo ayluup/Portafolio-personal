@@ -306,3 +306,22 @@ const hamburguesa = document.querySelector('.hamburguesa');
   hamburguesa.addEventListener('click', () => {
     menu.classList.toggle('show');
   });
+// Funciones para manejar el modal
+function showExpoQR() {
+  document.getElementById('expoQRModal').style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+}
+
+function closeExpoQR(event) {
+  if (!event || event.target.id === 'expoQRModal' || event.target.classList.contains('modal-close')) {
+    document.getElementById('expoQRModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeExpoQR();
+  }
+});

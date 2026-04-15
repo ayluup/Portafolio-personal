@@ -122,6 +122,30 @@
           <p class="project-description">Sitio web deportivo. Hecho por nexusweb </p>
           <a class="project-button" href="https://clubarenal1989.online/" target="_blank">Ver proyecto</a>
         </div>
+        <div class="project-card">
+        <h3 class="project-title">Pomodoro</h3>
+        <p class="project-description">Aplicación de gestión del tiempo basada en la técnica Pomodoro.</p>
+        <div class="proyecto-container">
+          
+          <a class="project-button demo-button"  onclick="showExpoQR()">Ver demo</a>
+          <a class="project-button" href="https://github.com/ayluup/pomodoro" target="_blank">Ver codigo fuente </a>
+        </div>
+      </div>
+
+      <div id="expoQRModal" class="modal" onclick="closeExpoQR(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <span class="modal-close" onclick="closeExpoQR()">&times;</span>
+          <h4>Escanea para probar la demo</h4>
+          <p class="modal-instructions">Abre la app de <strong>Expo Go</strong> y escanea el código:</p>  
+          <img 
+            src="./public/qr.png" 
+            alt="QR de Expo - Pomodoro App" 
+            class="expo-qr"
+          />
+          
+          <p class="modal-note">💡 Si no tienes Expo Go, <a href="https://expo.dev/client" target="_blank">descárgalo aquí</a></p>
+        </div>
+      </div>
         
         
       </div>
